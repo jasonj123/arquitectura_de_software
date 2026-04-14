@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #0f172a;
+    color: white;
+}
+
+/* HEADER */
+header {
+    background: #020617;
+    padding: 15px 40px;
+    border-bottom: 1px solid #1e293b;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #38bdf8;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: #38bdf8;
+}
+
+.btn-login {
+    background: #38bdf8;
+    padding: 8px 16px;
+    border-radius: 8px;
+    color: #020617 !important;
+    font-weight: bold;
+}
+
+.btn-login:hover {
+    background: #0ea5e9;
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+}
+
+/* TITULOS */
+.titulo-principal {
+    font-size: 48px;
+    margin-bottom: 40px;
+    color: #38bdf8;
+}
+
+.subtitulo {
+    font-size: 28px;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
+/* BLOQUES (CAJAS) */
+.bloque {
+    background: rgba(56, 189, 248, 0.08);
+    border: 1px solid rgba(56, 189, 248, 0.2);
+    padding: 25px;
+    border-radius: 12px;
+    max-width: 700px;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+/* TEXTO */
+.descripcion {
+    font-size: 18px;
+    color: #cbd5f5;
+    line-height: 1.6;
+}
+
+/* ANIMACIÓN */
+.animar {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s ease;
+}
+
+.animar.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
