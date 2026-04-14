@@ -137,17 +137,24 @@ nav {
     max-height: 120px;
     overflow-y: auto;
     margin-top: 10px;
-    padding: 5px;
-    border-top: 1px solid #1e293b;
+    padding: 10px;
+    
+    background: rgba(15, 23, 42, 0.6); /* 🔥 oscuro elegante */
+    border: 1px solid rgba(56, 189, 248, 0.2); /* borde suave celeste */
+    border-radius: 10px;
+
+    backdrop-filter: blur(4px); /* 🔥 efecto vidrio (pro) */
 }
 
 .archivo-link {
     display: block;
     color: #38bdf8;
     margin: 5px 0;
-    text-decoration: none;
+    padding: 5px;
+    border-radius: 6px;
+    transition: background 0.2s;
 }
 
 .archivo-link:hover {
-    text-decoration: underline;
+    background: rgba(56, 189, 248, 0.1);
 }
