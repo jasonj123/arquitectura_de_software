@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (esAdmin) {
         const menu = document.querySelector(".menu");
         const btnLogout = document.createElement("button");
-        btnLogout.textContent = "Cerrar sesión";
+        btnLogout.textContent = "CERRAR SESIÓN";
         btnLogout.classList.add("btn-login");
         btnLogout.addEventListener("click", () => {
             localStorage.removeItem("admin");

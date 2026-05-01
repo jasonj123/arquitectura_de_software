@@ -85,7 +85,7 @@ button.btn-login:hover { background: var(--crema); color: var(--negro); }
 .semanas-hero {
     position: relative; width: 100%;
     height: 55vh; min-height: 380px;
-    background-image: url('../images/imagen_semanas.png');
+    background-image: url('../images/forza.jpg');
     background-size: cover; background-position: center;
     display: flex; align-items: flex-end;
 }
