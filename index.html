@@ -4,16 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Portafolio</title>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Barlow+Condensed:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/index.css">
 </head>
-
 <body>
 
-<header>
+<header id="header">
     <nav>
-        <div class="logo">Mi Portafolio</div>
-
+        <div class="logo">
+            <img src="images/logo.png" alt="Logo UPLA" class="logo-img">
+            <div class="logo-texto">
+                <span class="logo-nombre">JHILMAR LOBATON ABREGU</span>
+                <span class="logo-sub">Ingeniería de Sistemas y Computación</span>
+            </div>
+        </div>
         <div class="menu">
             <a href="index.html">Inicio</a>
             <a href="semanas.html">Semanas</a>
@@ -22,27 +28,105 @@
     </nav>
 </header>
 
-<section class="hero">
+<!-- HERO: pantalla completa con imagen -->
+<section class="hero" id="hero">
+    <div class="hero-overlay" id="heroOverlay"></div>
 
-    <h1 class="titulo-principal animar">Arquitectura de Software</h1>
+    <div class="hero-content">
+        <p class="hero-eyebrow animar">Universidad Peruana Los Andes</p>
 
-    <div class="bloque animar">
-        <p class="descripcion">
-            La arquitectura de software es una disciplina fundamental en el desarrollo de sistemas, ya que define la estructura, organización y comportamiento de las aplicaciones. A través de este portafolio, se presentan los avances, actividades y recursos desarrollados durante el curso, organizados por semanas para facilitar su comprensión y seguimiento.
+        <h1 class="titulo-principal animar">
+            <span class="titulo-line">Arquitectura</span>
+            <span class="titulo-line titulo-accent">de Software</span>
+        </h1>
+
+        <div class="hero-divider animar"></div>
+
+        <p class="descripcion animar">
+            La arquitectura de software es una disciplina fundamental que define la estructura, organización
+            y comportamiento de los sistemas de información. Abarca desde los patrones de diseño y estilos
+            arquitectónicos hasta las decisiones técnicas que determinan la calidad, escalabilidad y
+            mantenibilidad de una aplicación. A través de este portafolio, se documentan los avances,
+            actividades prácticas y recursos desarrollados semana a semana durante el curso, reflejando
+            el proceso de aprendizaje continuo en esta área clave de la Ingeniería de Sistemas.
         </p>
+
+        <div class="hero-bottom animar">
+            <div class="autor-bloque">
+                <span class="autor-label">Estudiante</span>
+                <span class="autor-nombre">Jhilmar Jaison Lobaton Abregu</span>
+            </div>
+            <a href="semanas.html" class="btn-ver">Ver Semanas →</a>
+        </div>
     </div>
 
-    <h2 class="subtitulo animar">Bienvenido a mi portafolio</h2>
-
-    <div class="bloque animar">
-        <p class="descripcion">
-            Hola, soy JHILMAR JAISON LOBATON ABREGU, estudio Ingeniería de Sistemas y Computación en la Universidad Peruana Los Andes.
-        </p>
+    <div class="hero-badge animar">
+        <span>2026</span>
+        <span>Portafolio</span>
     </div>
 
+    <!-- Indicador de scroll -->
+    <div class="scroll-hint" id="scrollHint">
+        <span>Scroll</span>
+        <div class="scroll-arrow"></div>
+    </div>
+</section>
+
+<!-- SECCIÓN PRESENTACIÓN PERSONAL -->
+<section class="sobre-mi" id="sobreMi">
+    <div class="sobre-mi-inner">
+
+        <div class="sobre-mi-left">
+            <p class="sm-eyebrow">Sobre mí</p>
+            <h2 class="sm-titulo">
+                Jhilmar<br>
+                <span class="sm-titulo-accent">Jaison</span><br>
+                Lobaton
+            </h2>
+            <div class="sm-linea"></div>
+            <p class="sm-tag">Estudiante · Desarrollador · Ingeniero</p>
+        </div>
+
+        <div class="sobre-mi-right">
+            <p class="sm-parrafo">
+                Soy Jhilmar Jaison Lobaton Abregu, estudiante de Ingeniería de Sistemas y Computación
+                en la <strong>Universidad Peruana Los Andes</strong>. Me apasiona el desarrollo de software,
+                la resolución de problemas complejos y la construcción de sistemas que generen impacto real
+                en las personas y organizaciones.
+            </p>
+            <p class="sm-parrafo">
+                Durante mi formación académica he adquirido conocimientos sólidos en áreas como programación
+                orientada a objetos, bases de datos, desarrollo web y, en especial, arquitectura de software,
+                disciplina que me ha permitido entender cómo se diseñan y estructuran los sistemas a gran escala,
+                tomando decisiones técnicas que garantizan calidad, rendimiento y escalabilidad.
+            </p>
+            <p class="sm-parrafo">
+                Este portafolio es el reflejo de mi proceso de aprendizaje a lo largo del curso de Arquitectura
+                de Software, donde cada semana representa un avance concreto: desde los fundamentos teóricos
+                hasta la implementación práctica de patrones, estilos y herramientas modernas del desarrollo
+                de software. Mi objetivo es crecer como profesional integral, capaz de liderar proyectos
+                tecnológicos con visión estratégica y habilidades técnicas sólidas.
+            </p>
+
+            <div class="sm-datos">
+                <div class="sm-dato">
+                    <span class="sm-dato-num">4</span>
+                    <span class="sm-dato-label">Unidades</span>
+                </div>
+                <div class="sm-dato">
+                    <span class="sm-dato-num">16</span>
+                    <span class="sm-dato-label">Semanas</span>
+                </div>
+                <div class="sm-dato">
+                    <span class="sm-dato-num">UPLA</span>
+                    <span class="sm-dato-label">Universidad</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
 </section>
 
 <script src="js/index.js"></script>
-
 </body>
 </html>
